@@ -41,6 +41,8 @@
         NSString *text = [[self provider] valueFor:[self kName] property:[self kProperty]];
         if (text) {
             [self setText:text];
+        } else {
+            [self setText:@""];
         }
     }
 }

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface ManagedUI : NSObject
-
-@end
+#import <ManagedUI/ManagedObjectProvider.h>
+#import <ManagedUI/ManagedUITextField.h>
+#import <ManagedUI/ManagedUITextView.h>
+#import <ManagedUI/ValidateUtil.h>

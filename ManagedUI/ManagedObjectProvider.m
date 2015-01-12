@@ -5,8 +5,6 @@
 
 #import <UIKit/UIKit.h>
 #import "ManagedObjectProvider.h"
-#import "ManagedUI.h"
-
 
 @implementation ManagedObjectProvider {
 

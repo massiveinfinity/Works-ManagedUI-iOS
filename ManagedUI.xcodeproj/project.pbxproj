@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		99B779541A5E37DC005AF0F4 /* ManagedUI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99B779531A5E37DC005AF0F4 /* ManagedUI.h */; };
-		99B779561A5E37DC005AF0F4 /* ManagedUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B779551A5E37DC005AF0F4 /* ManagedUI.m */; };
+		999257641A62A4D70078A685 /* ManagedObjectProvider.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99B7796A1A5E3829005AF0F4 /* ManagedObjectProvider.h */; };
+		999257651A62A4D70078A685 /* ManagedUIProtocol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99B7796C1A5E3829005AF0F4 /* ManagedUIProtocol.h */; };
+		999257661A62A4D70078A685 /* ManagedUITextField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99B7796D1A5E3829005AF0F4 /* ManagedUITextField.h */; };
+		999257671A62A4D70078A685 /* ManagedUITextView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99B7796F1A5E3829005AF0F4 /* ManagedUITextView.h */; };
+		9992576A1A62D34F0078A685 /* ValidateUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEB4E9AC9821D1D2259F7302 /* ValidateUtil.h */; };
 		99B7795C1A5E37DC005AF0F4 /* libManagedUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B779501A5E37DC005AF0F4 /* libManagedUI.a */; };
 		99B779711A5E3829005AF0F4 /* ManagedObjectProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B7796B1A5E3829005AF0F4 /* ManagedObjectProvider.m */; };
 		99B779721A5E3829005AF0F4 /* ManagedUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B7796E1A5E3829005AF0F4 /* ManagedUITextField.m */; };
 		99B779731A5E3829005AF0F4 /* ManagedUITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B779701A5E3829005AF0F4 /* ManagedUITextView.m */; };
+		99CA8B1C1A627D5A00B77BF7 /* ManagedUI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99B779531A5E37DC005AF0F4 /* ManagedUI.h */; };
+		CEB4E93F356B195753C754E2 /* ValidateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB4E97070AF77F447D17F1B /* ValidateUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +37,12 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				99B779541A5E37DC005AF0F4 /* ManagedUI.h in CopyFiles */,
+				9992576A1A62D34F0078A685 /* ValidateUtil.h in CopyFiles */,
+				999257641A62A4D70078A685 /* ManagedObjectProvider.h in CopyFiles */,
+				999257651A62A4D70078A685 /* ManagedUIProtocol.h in CopyFiles */,
+				999257661A62A4D70078A685 /* ManagedUITextField.h in CopyFiles */,
+				999257671A62A4D70078A685 /* ManagedUITextView.h in CopyFiles */,
+				99CA8B1C1A627D5A00B77BF7 /* ManagedUI.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +51,6 @@
 /* Begin PBXFileReference section */
 		99B779501A5E37DC005AF0F4 /* libManagedUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libManagedUI.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B779531A5E37DC005AF0F4 /* ManagedUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagedUI.h; sourceTree = "<group>"; };
-		99B779551A5E37DC005AF0F4 /* ManagedUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagedUI.m; sourceTree = "<group>"; };
 		99B7795B1A5E37DC005AF0F4 /* ManagedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManagedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B779611A5E37DC005AF0F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99B7796A1A5E3829005AF0F4 /* ManagedObjectProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedObjectProvider.h; sourceTree = "<group>"; };
@@ -51,6 +60,8 @@
 		99B7796E1A5E3829005AF0F4 /* ManagedUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedUITextField.m; sourceTree = "<group>"; };
 		99B7796F1A5E3829005AF0F4 /* ManagedUITextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedUITextView.h; sourceTree = "<group>"; };
 		99B779701A5E3829005AF0F4 /* ManagedUITextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedUITextView.m; sourceTree = "<group>"; };
+		CEB4E97070AF77F447D17F1B /* ValidateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateUtil.m; sourceTree = "<group>"; };
+		CEB4E9AC9821D1D2259F7302 /* ValidateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +112,8 @@
 				99B7796F1A5E3829005AF0F4 /* ManagedUITextView.h */,
 				99B779701A5E3829005AF0F4 /* ManagedUITextView.m */,
 				99B779531A5E37DC005AF0F4 /* ManagedUI.h */,
-				99B779551A5E37DC005AF0F4 /* ManagedUI.m */,
+				CEB4E97070AF77F447D17F1B /* ValidateUtil.m */,
+				CEB4E9AC9821D1D2259F7302 /* ValidateUtil.h */,
 			);
 			path = ManagedUI;
 			sourceTree = "<group>";
@@ -210,10 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99B779561A5E37DC005AF0F4 /* ManagedUI.m in Sources */,
 				99B779731A5E3829005AF0F4 /* ManagedUITextView.m in Sources */,
 				99B779721A5E3829005AF0F4 /* ManagedUITextField.m in Sources */,
 				99B779711A5E3829005AF0F4 /* ManagedObjectProvider.m in Sources */,
+				CEB4E93F356B195753C754E2 /* ValidateUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +264,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -292,6 +305,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
