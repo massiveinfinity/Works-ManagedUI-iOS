@@ -18,6 +18,7 @@
 		99B779731A5E3829005AF0F4 /* ManagedUITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B779701A5E3829005AF0F4 /* ManagedUITextView.m */; };
 		99CA8B1C1A627D5A00B77BF7 /* ManagedUI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99B779531A5E37DC005AF0F4 /* ManagedUI.h */; };
 		CEB4E93F356B195753C754E2 /* ValidateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB4E97070AF77F447D17F1B /* ValidateUtil.m */; };
+		CEB4EA58C2C1FC45671F87C3 /* ManagedUITextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB4EAF551710009EE8EAC19 /* ManagedUITextFieldDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		99B779701A5E3829005AF0F4 /* ManagedUITextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedUITextView.m; sourceTree = "<group>"; };
 		CEB4E97070AF77F447D17F1B /* ValidateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateUtil.m; sourceTree = "<group>"; };
 		CEB4E9AC9821D1D2259F7302 /* ValidateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateUtil.h; sourceTree = "<group>"; };
+		CEB4EAF551710009EE8EAC19 /* ManagedUITextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedUITextFieldDelegate.m; sourceTree = "<group>"; };
+		CEB4EE70EB346A3390162A39 /* ManagedUITextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedUITextFieldDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				99B779531A5E37DC005AF0F4 /* ManagedUI.h */,
 				CEB4E97070AF77F447D17F1B /* ValidateUtil.m */,
 				CEB4E9AC9821D1D2259F7302 /* ValidateUtil.h */,
+				CEB4EAF551710009EE8EAC19 /* ManagedUITextFieldDelegate.m */,
+				CEB4EE70EB346A3390162A39 /* ManagedUITextFieldDelegate.h */,
 			);
 			path = ManagedUI;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				99B779721A5E3829005AF0F4 /* ManagedUITextField.m in Sources */,
 				99B779711A5E3829005AF0F4 /* ManagedObjectProvider.m in Sources */,
 				CEB4E93F356B195753C754E2 /* ValidateUtil.m in Sources */,
+				CEB4EA58C2C1FC45671F87C3 /* ManagedUITextFieldDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
