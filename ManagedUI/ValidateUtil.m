@@ -33,8 +33,6 @@
 
     for (id rule in [self validations]) {
         NSString *value = [provider valueFor:rule[@"name"] property:rule[@"property"]];
-        NSLog(@"value %@", value);
-
         NSArray *validators = rule[@"validator"];
         for (id validator in validators) {
             NSString *type = [validator[@"type"] stringByAppendingString:@":"];
