@@ -8,11 +8,13 @@
 #import "ManagedObjectProvider.h"
 #import "ManagedUIProtocol.h"
 
+IB_DESIGNABLE
 @interface ManagedUITextField : UITextField <ManagedUI>
 
 @property(strong, nonatomic) IBOutlet ManagedObjectProvider *provider;
 
 @property(strong, nonatomic) NSString *kName;
 @property(strong, nonatomic) NSString *kProperty;
+@property(nonatomic) IBInspectable int maxChars;
 
 @end
