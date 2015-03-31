@@ -12,8 +12,8 @@
 
 @property(strong, nonatomic) IBOutlet ManagedObjectProvider *provider;
 
-@property(strong, nonatomic) NSString *kName;
-@property(strong, nonatomic) NSString *kProperty;
+@property(strong, nonatomic) IBInspectable NSString *managedName;
+@property(strong, nonatomic) IBInspectable NSString *managedProperty;
 @property(nonatomic) IBInspectable int maxChars;
 
 @end

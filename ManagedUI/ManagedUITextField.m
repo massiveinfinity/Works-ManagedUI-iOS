@@ -18,21 +18,20 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
 
-    if ([self kName] && [self kProperty] && [self provider]) {
+    if ([self managedName] && [self managedProperty] && [self provider]) {
         [[self provider] registerManaged:self];
 
-        _delegate = [[ManagedUITextFieldDelegate alloc] initWithCompletion:^void(UITextField *field) {
-            if ([self kName] && [self kProperty] && [self provider]) {
-                [[self provider] setValueFor:[self kName] property:[self kProperty] value:[self text]];
+        [self setDelegate:[[ManagedUITextFieldDelegate alloc] initWithCompletion:^void(UITextField *field) {
+            if ([self managedName] && [self managedProperty] && [self provider]) {
+                [[self provider] setValueFor:[self managedName] property:[self managedProperty] value:[self text]];
             }
-        }];
-        [self setDelegate:_delegate];
+        }]];
     }
 }
 
 - (void)reloadManaged {
-    if ([self kName] && [self kProperty] && [self provider]) {
-        NSString *text = [[self provider] valueFor:[self kName] property:[self kProperty]];
+    if ([self managedName] && [self managedProperty] && [self provider]) {
+        NSString *text = [[self provider] valueFor:[self managedName] property:[self managedProperty]];
         if (text) {
             [self setText:text];
         } else {
