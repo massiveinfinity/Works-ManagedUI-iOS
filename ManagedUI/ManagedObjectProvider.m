@@ -6,6 +6,9 @@
 #import <UIKit/UIKit.h>
 #import "ManagedObjectProvider.h"
 
+@interface ManagedObjectProvider () <UITextFieldDelegate>
+@end
+
 @implementation ManagedObjectProvider {
 
     NSMutableArray *_controls;
@@ -46,6 +49,15 @@
 
 - (void)reload {
     for (id <ManagedUI> control in _controls) {
+        if ([control isKindOfClass:[UITextField class]]) {
+            UITextField *textField = (id) control;
+            [textField setDelegate:self];
+//            [textField setDelegate:[[ManagedUITextFieldDelegate alloc] initWithCompletion:^void(UITextField *field) {
+//                if ([control managedName] && [control managedProperty] && [control provider]) {
+//                    [[control provider] setValueFor:[control managedName] property:[control managedProperty] value:[textField text]];
+//                }
+//            }]];
+        }
         [control reloadManaged];
     }
 }
@@ -54,5 +66,11 @@
     [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
 }
 
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    id <ManagedUI> control = (id <ManagedUI>) textField;
+    if ([control managedName] && [control managedProperty] && [control provider]) {
+        [[control provider] setValueFor:[control managedName] property:[control managedProperty] value:[textField text]];
+    }
+}
 
 @end

@@ -39,13 +39,12 @@ static void *IdentifierManagedPropertyKey = &IdentifierManagedPropertyKey;
     if ([self managedName] && [self managedProperty] && [self provider]) {
         [[self provider] registerManaged:self];
 
-        [self setDelegate:[[ManagedUITextFieldDelegate alloc] initWithCompletion:^void(UITextField *field) {
-            if ([self managedName] && [self managedProperty] && [self provider]) {
-                [[self provider] setValueFor:[self managedName] property:[self managedProperty] value:[self text]];
-            }
-        }]];
+//        [self setDelegate:[[ManagedUITextFieldDelegate alloc] initWithCompletion:^void(UITextField *field) {
+//            if ([self managedName] && [self managedProperty] && [self provider]) {
+//                [[self provider] setValueFor:[self managedName] property:[self managedProperty] value:[self text]];
+//            }
+//        }]];
     }
-
 }
 
 - (void)reloadManaged {
