@@ -8,6 +8,7 @@
 #import "ManagedObjectProvider.h"
 #import "ManagedUIProtocol.h"
 
+
 @interface ManagedUITextField : UITextField <ManagedUI>
 
 @property(strong, nonatomic) IBOutlet ManagedObjectProvider *provider;

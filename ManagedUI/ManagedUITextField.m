@@ -8,11 +8,11 @@
 #import "ManagedUITextFieldDelegate.h"
 
 
-@interface ManagedUITextField () <UITextFieldDelegate>
+@interface ManagedUITextField () 
 @end
 
 @implementation ManagedUITextField {
-    ManagedUITextFieldDelegate* _delegate;
+    ManagedUITextFieldDelegate *_delegate;
 }
 
 - (void)awakeFromNib {
@@ -21,11 +21,12 @@
     if ([self managedName] && [self managedProperty] && [self provider]) {
         [[self provider] registerManaged:self];
 
-        [self setDelegate:[[ManagedUITextFieldDelegate alloc] initWithCompletion:^void(UITextField *field) {
+        _delegate = [[ManagedUITextFieldDelegate alloc] initWithCompletion:^void(UITextField *field) {
             if ([self managedName] && [self managedProperty] && [self provider]) {
                 [[self provider] setValueFor:[self managedName] property:[self managedProperty] value:[self text]];
             }
-        }]];
+        }];
+        [self setDelegate:_delegate];
     }
 }
 

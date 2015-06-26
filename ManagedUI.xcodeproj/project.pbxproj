@@ -17,7 +17,6 @@
 		99B779721A5E3829005AF0F4 /* ManagedUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B7796E1A5E3829005AF0F4 /* ManagedUITextField.m */; };
 		99B779731A5E3829005AF0F4 /* ManagedUITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B779701A5E3829005AF0F4 /* ManagedUITextView.m */; };
 		99CA8B1C1A627D5A00B77BF7 /* ManagedUI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99B779531A5E37DC005AF0F4 /* ManagedUI.h */; };
-		CEB4E5B61BFF21E6337B6223 /* UITextField+Managed.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB4E3973F07B72F8B49D404 /* UITextField+Managed.m */; };
 		CEB4E93F356B195753C754E2 /* ValidateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB4E97070AF77F447D17F1B /* ValidateUtil.m */; };
 		CEB4EA58C2C1FC45671F87C3 /* ManagedUITextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB4EAF551710009EE8EAC19 /* ManagedUITextFieldDelegate.m */; };
 /* End PBXBuildFile section */
@@ -35,7 +34,7 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		99B7794E1A5E37DC005AF0F4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
@@ -62,12 +61,10 @@
 		99B7796E1A5E3829005AF0F4 /* ManagedUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedUITextField.m; sourceTree = "<group>"; };
 		99B7796F1A5E3829005AF0F4 /* ManagedUITextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedUITextView.h; sourceTree = "<group>"; };
 		99B779701A5E3829005AF0F4 /* ManagedUITextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedUITextView.m; sourceTree = "<group>"; };
-		CEB4E3973F07B72F8B49D404 /* UITextField+Managed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Managed.m"; sourceTree = "<group>"; };
 		CEB4E97070AF77F447D17F1B /* ValidateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateUtil.m; sourceTree = "<group>"; };
 		CEB4E9AC9821D1D2259F7302 /* ValidateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateUtil.h; sourceTree = "<group>"; };
 		CEB4EAF551710009EE8EAC19 /* ManagedUITextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedUITextFieldDelegate.m; sourceTree = "<group>"; };
 		CEB4EE70EB346A3390162A39 /* ManagedUITextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedUITextFieldDelegate.h; sourceTree = "<group>"; };
-		CEB4EF4DE63EE1E85BC4E4C7 /* UITextField+Managed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Managed.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +119,6 @@
 				CEB4E9AC9821D1D2259F7302 /* ValidateUtil.h */,
 				CEB4EAF551710009EE8EAC19 /* ManagedUITextFieldDelegate.m */,
 				CEB4EE70EB346A3390162A39 /* ManagedUITextFieldDelegate.h */,
-				CEB4E3973F07B72F8B49D404 /* UITextField+Managed.m */,
-				CEB4EF4DE63EE1E85BC4E4C7 /* UITextField+Managed.h */,
 			);
 			path = ManagedUI;
 			sourceTree = "<group>";
@@ -237,7 +232,6 @@
 				99B779711A5E3829005AF0F4 /* ManagedObjectProvider.m in Sources */,
 				CEB4E93F356B195753C754E2 /* ValidateUtil.m in Sources */,
 				CEB4EA58C2C1FC45671F87C3 /* ManagedUITextFieldDelegate.m in Sources */,
-				CEB4E5B61BFF21E6337B6223 /* UITextField+Managed.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,63 +253,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		997B82841A7B7A4600283451 /* AdHoc */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = AdHoc;
-		};
-		997B82851A7B7A4600283451 /* AdHoc */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = AdHoc;
-		};
-		997B82861A7B7A4600283451 /* AdHoc */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ManagedUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = AdHoc;
-		};
 		99B779621A5E37DC005AF0F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -352,7 +289,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -395,7 +332,6 @@
 		99B779651A5E37DC005AF0F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -404,7 +340,6 @@
 		99B779661A5E37DC005AF0F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -448,7 +383,6 @@
 			buildConfigurations = (
 				99B779621A5E37DC005AF0F4 /* Debug */,
 				99B779631A5E37DC005AF0F4 /* Release */,
-				997B82841A7B7A4600283451 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -458,7 +392,6 @@
 			buildConfigurations = (
 				99B779651A5E37DC005AF0F4 /* Debug */,
 				99B779661A5E37DC005AF0F4 /* Release */,
-				997B82851A7B7A4600283451 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -468,7 +401,6 @@
 			buildConfigurations = (
 				99B779681A5E37DC005AF0F4 /* Debug */,
 				99B779691A5E37DC005AF0F4 /* Release */,
-				997B82861A7B7A4600283451 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
